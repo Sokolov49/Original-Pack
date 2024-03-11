@@ -1,0 +1,136 @@
+<mod name="OriginalPack">
+<hooks script_path="lua/" hook_id="core/lib/">
+	<post :hook_id="managers/coresequencemanager"					:script_path="core/coresequencemanager.lua"/>
+	<post :hook_id="managers/coreenvironmentcontrollermanager"		:script_path="interface/coreenvironmentcontrollermanager.lua"/>
+	<post :hook_id="managers/mission/coreelementrandom"				:script_path="narrative/coreelementrandom.lua"/>
+</hooks>
+	
+<hooks script_path="lua/" hook_id="lib/">
+	<post :hook_id="tweak_data/tipstweakdata"							:script_path="tips.lua"/>
+	<post :hook_id="tweak_data/gageassignmenttweakdata"					:script_path="content.lua"/>
+	<post :hook_id="tweak_data/tweakdata"								:script_path="tweakdata.lua"/>
+
+	<post :hook_id="tweak_data/achievementstweakdata"					:script_path="achievements/achievementstweakdata.lua"/>
+	<post :hook_id="tweak_data/hudiconstweakdata"						:script_path="achievements/hudiconstweakdata.lua"/>
+	<post :hook_id="managers/achievmentmanager"							:script_path="achievements/achievmentmanager.lua"/>
+	<post :hook_id="managers/menu/achievementlistgui"					:script_path="achievements/achievementlistgui.lua"/>
+	<post :hook_id="managers/achievement/cac_customachievements"		:script_path="achievements/cac_customachievements.lua"/>
+	<post :hook_id="managers/blackmarketmanager"						:script_path="achievements/blackmarketmanager.lua"/>
+	
+	<post :hook_id="tweak_data/playertweakdata"							:script_path="attention/playertweakdata.lua"/>
+	<post :hook_id="units/beings/player/states/playerstandard"			:script_path="attention/playerstandard.lua"/>
+	<post :hook_id="managers/gameplaycentralmanager"					:script_path="attention/gameplaycentralmanager.lua"/>
+	<post :hook_id="managers/group_ai_states/groupaistatebase"			:script_path="attention/groupaistatebase.lua"/>
+	<post :hook_id="units/props/drill"									:script_path="attention/drill.lua"/>
+	<post :hook_id="units/weapons/weaponlaser"							:script_path="attention/weaponlaser.lua"/>
+	
+	<post :hook_id="managers/localizationmanager"						:script_path="core/localizationmanager.lua"/>
+	<post :hook_id="network/matchmaking/networkmatchmakingsteam"		:script_path="core/networkmatchmakingsteam.lua"/>
+	<post :hook_id="network/matchmaking/networkmatchmakingepic"			:script_path="core/networkmatchmakingepic.lua"/>
+	<post :hook_id="managers/savefilemanager"							:script_path="core/savefilemanager.lua"/>
+	<post :hook_id="managers/menu/menunodegui"							:script_path="core/menunodegui.lua"/>
+	<post :hook_id="managers/blackmarketmanager"						:script_path="core/blackmarketmanager.lua"/>
+	<post :hook_id="managers/dlcmanager"								:script_path="core/dlcmanager.lua"/>
+	<post :hook_id="managers/menumanager"								:script_path="core/menumanager.lua"/>
+	<post :hook_id="managers/menu/renderers/menunodecreditsgui"			:script_path="core/menunodecreditsgui.lua"/>
+	
+	<post :hook_id="tweak_data/weapontweakdata"							:script_path="difficulties/weapontweakdata.lua"/>
+	<post :hook_id="tweak_data/charactertweakdata"						:script_path="difficulties/charactertweakdata.lua"/>
+	<post :hook_id="tweak_data/groupaitweakdata"						:script_path="difficulties/groupaitweakdata.lua"/>
+	<post :hook_id="units/weapons/grenades/quickflashgrenade"			:script_path="difficulties/quickflashgrenade.lua"/>
+	<post :hook_id="managers/mission/elementspawnenemygroup"			:script_path="difficulties/elementspawnenemygroup.lua"/>
+	<post :hook_id="managers/group_ai_states/groupaistatebesiege"		:script_path="difficulties/groupaistatebesiege.lua"/>
+	<post :hook_id="units/enemies/cop/actions/upper_body/copactionhurt"	:script_path="difficulties/copactionhurt.lua"/>
+	<post :hook_id="units/enemies/cop/copbase"	                        :script_path="difficulties/copbase.lua"/>
+	<post :hook_id="units/enemies/cop/copdamage"	                    :script_path="difficulties/copdamage.lua"/>
+	<post :hook_id="units/enemies/cop/copsound"	                        :script_path="difficulties/copsound.lua"/>
+	<post :hook_id="units/enemies/cop/copbrain"	                        :script_path="difficulties/copbrain.lua"/>
+	<post :hook_id="units/enemies/cop/logics/coplogicbase"				:script_path="difficulties/coplogicbase.lua"/>
+	<post :hook_id="units/enemies/cop/logics/coplogicidle"				:script_path="difficulties/coplogicidle.lua"/>
+	<post :hook_id="units/enemies/cop/logics/coplogictravel"			:script_path="difficulties/coplogictravel.lua"/>
+	<post :hook_id="units/enemies/cop/copmovement"						:script_path="difficulties/copmovement.lua"/>
+	<post :hook_id="managers/hud/hudassaultcorner"						:script_path="difficulties/hudassaultcorner.lua"/>
+	<post :hook_id="managers/menumanager"								:script_path="difficulties/menumanager.lua"/>
+	<post :hook_id="managers/menu/items/contractbrokerheistitem"		:script_path="difficulties/contractbrokerheistitem.lua"/>
+	<post :hook_id="managers/hud/newhudstatsscreen"						:script_path="difficulties/newhudstatsscreen.lua"/>
+	<post :hook_id="managers/hud/hudstageendscreen"						:script_path="difficulties/hudstageendscreen.lua"/>
+	<post :hook_id="managers/hud/hudmissionbriefing"					:script_path="difficulties/hudmissionbriefing.lua"/>
+	<post :hook_id="managers/menu/contractboxgui"						:script_path="difficulties/contractboxgui.lua"/>
+	<post :hook_id="managers/menu/ingamecontractgui"					:script_path="difficulties/ingamecontractgui.lua"/>
+	<post :hook_id="managers/menu/crimenetcontractgui"					:script_path="difficulties/crimenetcontractgui.lua"/>
+	<post :hook_id="managers/crimenetmanager"							:script_path="difficulties/crimenetmanager.lua"/>
+	<post :hook_id="managers/criminalsmanager"							:script_path="difficulties/criminalsmanager.lua"/>
+	<post :hook_id="managers/menumanager"								:script_path="difficulties/menumanager.lua"/>
+	
+	<post :hook_id="managers/experiencemanager"							:script_path="infamy/experiencemanager.lua"/>
+	<post :hook_id="units/props/infamycardgui"							:script_path="infamy/infamycardgui.lua"/>
+
+	<post :hook_id="managers/menu/multiprofileitemgui"					:script_path="interface/multiprofileitemgui.lua"/>
+	<post :hook_id="managers/menu/walletguiobject"						:script_path="interface/walletguiobject.lua"/>
+	<post :hook_id="managers/menu/menuscenemanager"						:script_path="interface/menuscenemanager.lua"/>
+	<post :hook_id="managers/chatmanager"								:script_path="interface/chatmanager.lua"/>
+	<post :hook_id="managers/menu/playerinventorygui"					:script_path="interface/playerinventorygui.lua"/>
+	<post :hook_id="managers/crimenetmanager"							:script_path="interface/crimenetmanager.lua"/>
+	<post :hook_id="tweak_data/blackmarket/playerstyletweakdata"		:script_path="interface/playerstyletweakdata.lua"/>
+	<post :hook_id="managers/menu/crewmanagementgui"					:script_path="interface/crewmanagementgui.lua"/>
+	<post :hook_id="managers/blackmarketmanager"						:script_path="interface/blackmarketmanager.lua"/>
+	<post :hook_id="states/bootupstate" 								:script_path="interface/bootupstate.lua"/>
+    <post :hook_id="managers/menu/menucomponentmanager" 				:script_path="interface/menucomponentmanager.lua"/>
+	
+	<post :hook_id="tweak_data/narrativetweakdata"						:script_path="narrative/narrativetweakdata.lua"/>
+	<post :hook_id="managers/experiencemanager"							:script_path="narrative/experiencemanager.lua"/>
+	<post :hook_id="managers/hud/hudstageendscreen"						:script_path="narrative/hudstageendscreen.lua"/>
+	<post :hook_id="units/interactions/interactionext"					:script_path="narrative/interactionext.lua"/>
+	<post :hook_id="network/handlers/unitnetworkhandler"				:script_path="narrative/unitnetworkhandler.lua"/>
+	<post :hook_id="managers/menumanager"								:script_path="narrative/menumanager.lua"/>
+	<post :hook_id="managers/votemanager"								:script_path="narrative/votemanager.lua"/>
+	<post :hook_id="tweak_data/crimespreetweakdata"						:script_path="narrative/crimespreetweakdata.lua"/>
+	<post :hook_id="managers/crimespreemanager"							:script_path="narrative/crimespreemanager.lua"/>
+	<post :hook_id="tweak_data/skirmishtweakdata"						:script_path="narrative/skirmishtweakdata.lua"/>
+	<post :hook_id="managers/skirmishmanager"							:script_path="narrative/skirmishmanager.lua"/>
+	<post :hook_id="managers/customsafehousemanager"					:script_path="narrative/customsafehousemanager.lua"/>
+	<post :hook_id="tweak_data/moneytweakdata"							:script_path="narrative/moneytweakdata.lua"/>
+	<post :hook_id="managers/moneymanager"								:script_path="narrative/moneymanager.lua"/>
+	
+    <post :hook_id="tweak_data/skilltreetweakdata" 						:script_path="skills/skilltreetweakdata.lua"/>
+    <post :hook_id="managers/skilltreemanager" 							:script_path="skills/skilltreemanager.lua"/>
+    <post :hook_id="tweak_data/upgradestweakdata"						:script_path="skills/upgradestweakdata.lua"/>
+    <post :hook_id="tweak_data/interactiontweakdata" 					:script_path="skills/interactiontweakdata.lua"/>
+    <post :hook_id="tweak_data/equipmentstweakdata" 					:script_path="skills/equipmentstweakdata.lua"/>
+	<post :hook_id="units/beings/player/playerdamage"					:script_path="skills/playerdamage.lua"/>
+	<post :hook_id="managers/group_ai_states/groupaistatebase"			:script_path="skills/groupaistatebase.lua"/>
+	<post :hook_id="units/beings/player/states/playermaskoff"			:script_path="skills/playermaskoff.lua"/>
+	<post :hook_id="managers/playermanager"								:script_path="skills/playermanager.lua"/>
+	<post :hook_id="managers/menu/skilltreegui"							:script_path="skills/skilltreegui.lua"/>
+    <post :hook_id="units/equipment/ammo_bag/ammobagbase" 				:script_path="skills/ammobagbase.lua"/>
+    <post :hook_id="managers/menu/menucomponentmanager" 				:script_path="skills/menucomponentmanager.lua"/>
+    <post :hook_id="managers/menu/playerinventorygui" 					:script_path="skills/playerinventorygui.lua"/>
+    <post :hook_id="units/beings/player/states/playertased" 			:script_path="skills/playertased.lua"/>
+	<post :hook_id="managers/menumanagerdialogs"						:script_path="skills/menumanagerdialogs.lua"/>
+	<post :hook_id="units/weapons/newraycastweaponbase"					:script_path="skills/newraycastweaponbase.lua"/>
+	<post :hook_id="managers/blackmarketmanager"						:script_path="skills/blackmarketmanager.lua"/>
+	<post :hook_id="units/weapons/sentrygunweapon"						:script_path="skills/sentrygunweapon.lua"/>
+	<post :hook_id="managers/localizationmanager"						:script_path="skills/localizationmanager.lua"/>
+	<post :hook_id="units/equipment/ecm_jammer/ecmjammerbase"			:script_path="skills/ecmjammerbase.lua"/>
+	<post :hook_id="units/beings/player/states/playerstandard"			:script_path="skills/playerstandard.lua"/>
+	<post :hook_id="units/beings/player/playermovement"					:script_path="skills/playermovement.lua"/>
+	<post :hook_id="managers/menumanager"								:script_path="skills/menumanager.lua"/>
+	<post :hook_id="units/enemies/cop/logics/coplogicidle"				:script_path="skills/coplogicidle.lua"/>
+	<post :hook_id="units/enemies/cop/logics/coplogicintimidated"		:script_path="skills/coplogicintimidated.lua"/>
+	
+	<post :hook_id="tweak_data/weapontweakdata"							:script_path="weapons/weapontweakdata.lua"/>
+	<post :hook_id="tweak_data/weaponfactorytweakdata"					:script_path="weapons/weaponfactorytweakdata.lua"/>
+	<post :hook_id="tweak_data/blackmarket/meleeweaponstweakdata"		:script_path="weapons/meleeweaponstweakdata.lua"/>
+	<post :hook_id="units/weapons/raycastweaponbase"					:script_path="weapons/raycastweaponbase.lua"/>
+	<post :hook_id="utils/inventorydescription"							:script_path="weapons/inventorydescription.lua"/>
+	<post :hook_id="managers/blackmarketmanager"						:script_path="weapons/blackmarketmanager.lua"/>
+	
+	<post :hook_id="units/enemies/cop/copdamage"						:script_path="extras.lua"/>
+	<post :hook_id="tweak_data/charactertweakdata"						:script_path="extras.lua"/>
+	<post :hook_id="managers/hudmanagerpd2"								:script_path="extras.lua"/>
+	<post :hook_id="tweakdata/weapontweakdata"							:script_path="extras.lua"/>
+	<post :hook_id="units/beings/player/playerdamage"					:script_path="extras.lua"/>
+	<post :hook_id="units/beings/player/playerstandard" 				:script_path="extras.lua"/>
+	<post :hook_id="units/beings/player/huskplayerinventory"			:script_path="extras.lua"/>
+	<post :hook_id="units/beings/player/huskplayermovement" 			:script_path="extras.lua"/>
+</hooks>

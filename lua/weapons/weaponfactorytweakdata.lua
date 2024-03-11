@@ -22,7 +22,8 @@ function WeaponFactoryTweakData:init(tweak_data)
 					can_shoot_through_shield = true,
 					can_shoot_through_wall = true,
 					ammo_pickup_min_mul = 1,
-					ammo_pickup_max_mul = 1
+					ammo_pickup_max_mul = 1,
+					muzzleflash = "effects/payday2/particles/weapons/50cal_auto_fps"
 				}
 				local explosive = {
 					ignore_statistic = true,
@@ -31,14 +32,16 @@ function WeaponFactoryTweakData:init(tweak_data)
 					damage_far_mul = 2.5,
 					bullet_class = "InstantExplosiveBulletBase",
 					ammo_pickup_min_mul = 0.5,
-					ammo_pickup_max_mul = 0.7
+					ammo_pickup_max_mul = 0.7,
+					uzzleflash = "effects/payday2/particles/weapons/pistol/pis_muzzleflash"
 				}
 				local piercing = {
 					damage_near_mul = 2,
 					damage_far_mul = 1.7,
 					armor_piercing_add = 1,
 					ammo_pickup_min_mul = 0.9,
-					ammo_pickup_max_mul = 1
+					ammo_pickup_max_mul = 1,
+					muzzleflash = "effects/payday2/particles/weapons/shotgun/sho_fle_muzzleflash"
 				}
 				if overrides.wpn_fps_upg_a_slug then
 					overrides.wpn_fps_upg_a_slug.custom_stats = slugs
